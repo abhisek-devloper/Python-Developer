@@ -1,0 +1,190 @@
+Python Intro
+------------
+Guido van rossum (1991)
+-python is highlevel interpreted language
+-python support diffrent paradism are procedural, functional and object-oriented
+
+Features
+--------
+-Readability (its clear and readable syntax)
+-Easy to learn (Python’s readability makes it relatively easy for beginners)
+-Open source and free (its source code is freely available)
+-Rich library support (includes pre-written code for various tasks)
+-Dynamically typed (you don't have to declare the data type)
+
+Application
+-----------
+-Web dev. (django,flask,fastapi)
+-Software dev. (scripting,automation,testing)
+-game dev.(pygame)
+-data science (numpy,pandas,matplotlib,seaborn)
+-machine learning and AI (Tensorflow,Pytorch,scikit-learn)
+
+
+
+1. Python Basics
+----------------
+-Data Types and Variables
+-Operations and Expressions
+-Conditional Statements (if, elif, else)
+-Loops (for, while)
+-Functions (def, return, scope)
+-Type Casting
+-Global (Modify global vars inside a function) vs Nonlocal (Modify outer function vars in a closure)
+-Modules (builtin & custom)
+-Exceptions (basic try-except)
+
+2. Python Data Structures (Core)
+--------------------------------
+-List (Ordered, Mutable, Allows duplicates)
+-Tuple  (Ordered, Immutable, Faster than list)
+-Set (Unordered, Unique values, No duplicates)
+-Dictionary  (Key-Value pairs, Fast lookup)
+-List Comprehensions  (way to create lists using expressions inside brackets.)
+-Dictionary Comprehensions  (way to create dictionary using expressions inside brackets.)
+
+3. Python DSA (Data Structures & Algorithms)
+--------------------------------------------
+-Array
+-Linked List
+-Stack
+-Queue
+-Heap
+-Hash Tables
+-Binary Search Tree
+-Recursion
+-Sorting Algorithms
+
+4. Python Strings & File Handling
+---------------------------------
+-String Manipulation
+-Regular Expressions (it allow to pattern matching in strings.)
+-File Handling (read/write files)
+       ex-  with open("example.txt", "r") as f:
+    		content = f.read()
+    		print("\nFile Content:\n", content)
+
+5. Python Advanced Features
+---------------------------
+-Lambdas  (one line function syntax- lambda arguments: expression)
+-Iterators & Iterables
+	Iterable → object that can return an iterator (e.g., list, tuple, string).
+	Iterator → object with __iter__() and __next__() methods.
+-map, reduce, filter
+      example - # map → apply function to all elements
+			nums = [1, 2, 3, 4, 5]
+			squares = list(map(lambda x: x*x, nums))
+			print("\nMap (Squares):", squares)
+		# filter → filter elements by condition
+			evens = list(filter(lambda x: x % 2 == 0, nums))
+			print("Filter (Evens):", evens)
+
+		# reduce → apply cumulative function
+			sum_all = reduce(lambda a, b: a+b, nums)
+			print("Reduce (Sum):", sum_all)
+
+-Generators & Decorators
+	Generators → functions that use yield to return values one at a time.They save memory compared to lists.
+	Decorators → functions that take another function as input and add extra functionality.
+- yield (gives a sequence of results over time, without losing the function’s state.) 
+  return (return gives a single result and ends the function.) 
+  
+-Closures (A closure is a function that “remembers” variables from its enclosing scope, even if that scope has finished execution.)
+-Context Managers
+ (Used to manage resources like files, network connections, etc.)
+ (Implemented using with keyword (automatically handles setup & cleanup).)
+
+6. Python OOP (Object-Oriented Programming)
+-------------------------------------------
+-Classes and Objects
+-Inheritance
+-Polymorphism
+-Encapsulation
+	-Definition: Wrapping variables and methods inside a class, restricting direct access to some components.
+	 Achieved using private (_ or __) variables/methods.
+-Abstraction
+	-Definition: Hiding implementation details and showing only essential features.
+	 Achieved using abstract classes (from abc module).
+-Methods & Dunder (magic) methods
+	-Methods: Functions defined inside a class that operate on objects.
+	-Dunder methods: Special methods with double underscores (__method__). Used for operator overloading and object customization.
+
+7. Error Handling (Advanced)
+---------------------------
+-Exception Handling (try, except, finally)
+-Custom Exceptions
+
+8. Python Modules & Packages
+----------------------------
+-Built-in Modules
+-Custom Modules
+-Package Managers (PyPI, pip, conda, poetry, uv)
+	PyPI → Python Package Index (repository of packages)
+	pip → Default package installer (pip install requests)
+	conda → Manages packages + environments (used in data science)
+	poetry → Dependency & project manager with virtualenv support
+	uv → Ultra-fast Python package/dependency manager
+
+9. Working with Data
+--------------------
+-Numpy
+-Pandas
+
+10. Data Visualization
+----------------------
+-Matplotlib
+-Seaborn
+
+11. Python for Web Development
+------------------------------
+-Flask (basics)
+-FastAPI
+-Django (MVC, ORM)
+-RESTful APIs
+-Authentication & Authorization
+-Deployment with Docker
+-Sync vs Async programming
+
+12. Databases
+-------------
+-SQLite (direct SQL queries)
+-SQLAlchemy (ORM)
+
+13. Testing & Debugging
+-----------------------
+-Writing Unit Tests
+-unittest & pytest
+-Debugging Techniques
+-tox, nose, doctest, pyUnit
+
+14. Environment & Static Typing
+-------------------------------
+-Pipenv, Virtualenv, Pyenv
+-Typing, Mypy, Pyright, Pyre
+-Pydantic
+
+15. Code Quality & Documentation
+---------------------------------
+-Code formatting: black, yapf, ruff
+-Documentation: Sphinx
+
+16. Concurrent & Parallel Programming
+-------------------------------------
+-Threads
+-Multiprocessing
+-Asyncio
+-GIL (Global Interpreter Lock)
+
+17. Python for Data Science & ML
+--------------------------------
+-Scikit-Learn
+-Basic ML Models (regression, classification)
+
+18. DevOps & Cloud with Python
+------------------------------
+-CI/CD pipelines
+-Jenkins automation
+-Deploying apps on AWS / GCP
+
+
+

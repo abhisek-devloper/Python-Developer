@@ -1,0 +1,13 @@
+Time complexity - In computer science describes  how the execution time of an algorithm grows as the input size increases. it essentially quantifies the number of operations an algorithm performs as a function of the input data size.
+
+Asymptotic Notations - 
+	1- Best Case - 1 operation 	omega(1)
+	2- Worst Case - n operation	BigOH(n)
+	3- Average Case - n/2 operation	Theta(n/2)
+	
+Types -
+	1- Constant time
+	2- Logarithmic time
+	3- Linear time
+	4- Quadratic time
+	5- Exponential time
